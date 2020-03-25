@@ -1,0 +1,56 @@
+<svg class="svg-spin" width="70" height="70" viewBox="0 0 44 44">
+<style>
+.svg-spin{
+	-webkit-animation:rot 2s linear infinite;
+	animation:rot 2s linear infinite;
+	z-index:2
+}
+.c-spin{
+	stroke-dasharray:1,150;
+	stroke-dashoffset:0;
+	stroke:#17a2b8;
+	stroke-linecap:round;
+	-webkit-animation:dash 1.5s ease-in-out infinite;
+	animation:dash 1.5s ease-in-out infinite
+}
+@keyframes rot{
+	100%{
+		transform:rotate(360deg)
+	}
+}
+@-webkit-keyframes rotate{
+	100%{
+		-webkit-transform:rotate(360deg)
+	}
+}
+@keyframes dash{
+	0%{
+		stroke-dasharray:1,150;
+		stroke-dashoffset:0
+	}
+	50%{
+		stroke-dasharray:90,150;
+		stroke-dashoffset:-35
+	}
+	100%{
+		stroke-dasharray:90,150;
+		stroke-dashoffset:-124
+	}
+}
+@-webkit-keyframes dash{
+	0%{
+		stroke-dasharray:1,150;
+		stroke-dashoffset:0
+	}
+	50%{
+		stroke-dasharray:90,150;
+		stroke-dashoffset:-35
+	}
+	100%{
+		stroke-dasharray:90,150;
+		stroke-dashoffset:-124
+	}
+}
+</style>
+<circle class="c-spin" cx="22" cy="22" r="20" fill="none" stroke-width="4"></circle>
+</svg>
